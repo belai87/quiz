@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,800;1,200;1,300;1,900&display=swap');
+@import "utils/vars";
+@import "utils/mixins";
+@import "utils/reset";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family:$mainFont;
+  font-size: 1.6rem;
+  font-weight: 400;
+  background:$backgroundColor;
+  color:$mainColor;
+}
+header{
+  position: sticky;
+  top:0;
+  z-index:20;
+  background:$backgroundColor;
+}
+main{
+  flex: 1 0 auto;
+  z-index:10;
+}
+footer{
+  flex: 0 0 auto;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+.container{
+  max-width: 1200px;
+  padding:0 20px;
+  margin:0 auto;
+  position: relative;
+  overflow: hidden;
+
+  @media screen and (max-width:$xl){
+    max-width: 100%;
+  }
+}
+
+a{
+  transition: $transition;
+
+  &:hover,
+  &:focus,
+  &:active{
+    color:$secondColor
+  }
+}
+@import "btn";
+@import "flex";
+//header
+@import "components/header/header";
+@import "components/header/logo";
+@import "components/pages/main/people";
+@import "components/pages/main/steps";
+@import "components/pages/quiz/quiz";
+

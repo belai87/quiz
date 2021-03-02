@@ -1,0 +1,52 @@
+.step{
+
+  &-item{
+    width: 40px;
+    height:40px;
+    background: $grayColor;
+    border-radius: 6px;
+    color:#ffffff;
+    font-size: 24px;
+    flex:1 0 auto;
+    transition:$transition;
+
+    @media screen and (max-width:$lg) {
+      width: 24px;
+      height:24px;
+      font-size: 14px;
+      flex:0 0 auto;
+    }
+
+    &:first-child{
+      background: $primaryColor;
+    }
+
+    &.active{
+      background: $primaryColor;
+    }
+  }
+
+  &-arrow{
+    width:60px;
+    height:10px;
+    margin:0 15px;
+
+    @media screen and (max-width:$lg) {
+      width:30px;
+      margin:0 10px;
+    }
+  }
+
+  &-header{
+    @media screen and (max-width:$lg) {
+      display: none;
+    }
+  }
+
+  &-content{
+    display: none;
+    @media screen and (max-width:$lg) {
+      display: flex;
+    }
+  }
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>QUIZ</title>
+</head>
+<!-- <svg><use xlink:href="./assets/img/sprite.svg#logo"></use></svg> -->
+<body>
+<div class="wrapper">
+
+    <header>
+        <div class="container">
+            <div class="header-wrapper flex flex-align-center flex-justify-between">
+                <div class="logo">
+                    <svg><use xlink:href="./assets/img/sprite.svg#logo"></use></svg>
+                </div>
+                <div class="step step-header flex flex-align-center">
+                    <div class="step-item flex-center">1</div>
+                    <svg class="step-arrow"><use xlink:href="./assets/img/sprite.svg#step-arrow"></use></svg>
+                    <div class="step-item flex-center" data-step="2">2</div>
+                    <svg class="step-arrow"><use xlink:href="./assets/img/sprite.svg#step-arrow"></use></svg>
+                    <div class="step-item flex-center" data-step="3">3</div>
+                    <svg class="step-arrow"><use xlink:href="./assets/img/sprite.svg#step-arrow"></use></svg>
+                    <div class="step-item flex-center" data-step="4">4</div>
+                </div>
+                <a class="header-phone" href="tel:+78005504183">+7 (800) 550-41-83</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="step step-content flex flex-align-center flex-justify-center">
+                <div class="step-item flex-center">1</div>
+                <svg class="step-arrow"><use xlink:href="./assets/img/sprite.svg#step-arrow-mobile"></use></svg>
+                <div class="step-item flex-center" data-step="2">2</div>
+                <svg class="step-arrow"><use xlink:href="./assets/img/sprite.svg#step-arrow-mobile"></use></svg>
+                <div class="step-item flex-center" data-step="3">3</div>
+                <svg class="step-arrow"><use xlink:href="./assets/img/sprite.svg#step-arrow-mobile"></use></svg>
+                <div class="step-item flex-center" data-step="4">4</div>
+            </div>
+            <div class="quiz flex flex-align-center">
+                <div class="quiz-form">
+                    <div class="quiz-item active" data-step="1">
+                        <div class="quiz-title">Кого позовете на вечеринку?</div>
+                        <form>
+                            <label class='quiz-label flex flex-align-center' for="STEP_1_1">
+                                <input class="quiz-input" type="radio" name="STEP_1" id="STEP_1_1">
+                                <svg class="quiz-label_arrow quiz-label_arrow__red"><use xlink:href="./assets/img/sprite.svg#quiz-arrow-red"></use></svg>
+                                <div class="quiz-label_step">Семью</div>
+                            </label>
+                            <label class='quiz-label flex flex-align-center' for="STEP_1_2">
+                                <input class="quiz-input" type="radio" name="STEP_1" id="STEP_1_2">
+                                <svg class="quiz-label_arrow quiz-label_arrow__red"><use xlink:href="./assets/img/sprite.svg#quiz-arrow-red"></use></svg>
+                                <div class="quiz-label_step">Друзей</div>
+                            </label>
+                            <label class='quiz-label flex flex-align-center' for="STEP_1_3">
+                                <input class="quiz-input" type="radio" name="STEP_1" id="STEP_1_3">
+                                <svg class="quiz-label_arrow quiz-label_arrow__red"><use xlink:href="./assets/img/sprite.svg#quiz-arrow-red"></use></svg>
+                                <div class="quiz-label_step">Коллег</div>
+                            </label>
+                            <label class='quiz-label flex flex-align-center' for="STEP_1_4">
+                                <input class="quiz-input" type="radio" name="STEP_1" id="STEP_1_4">
+                                <svg class="quiz-label_arrow quiz-label_arrow__red"><use xlink:href="./assets/img/sprite.svg#quiz-arrow-red"></use></svg>
+                                <div class="quiz-label_step">Любимого человека</div>
+                            </label>
+                        </form>
+                    </div>
+                    <div class="quiz-item" data-step="2">
+                        <div class="quiz-title">Какое настроение будет у вашей вечеринке?</div>
+                        <form>
+                            <label class='quiz-label flex flex-align-center' for="STEP_2_1">
+                                <input class="quiz-input" type="radio" name="STEP_1" id="STEP_2_1">
+                                <svg class="quiz-label_arrow quiz-label_arrow__red"><use xlink:href="./assets/img/sprite.svg#quiz-arrow-red"></use></svg>
+                                <div class="quiz-label_step">Расслабленное</div>
+                            </label>
+                            <label class='quiz-label flex flex-align-center' for="STEP_2_2">
+                                <input class="quiz-input" type="radio" name="STEP_1" id="STEP_2_2">
+                                <svg class="quiz-label_arrow quiz-label_arrow__red"><use xlink:href="./assets/img/sprite.svg#quiz-arrow-red"></use></svg>
+                                <div class="quiz-label_step">Уютное</div>
+                            </label>
+                            <label class='quiz-label flex flex-align-center' for="STEP_2_3">
+                                <input class="quiz-input" type="radio" name="STEP_1" id="STEP_2_3">
+                                <svg class="quiz-label_arrow quiz-label_arrow__red"><use xlink:href="./assets/img/sprite.svg#quiz-arrow-red"></use></svg>
+                                <div class="quiz-label_step">Веселое</div>
+                            </label>
+                            <label class='quiz-label flex flex-align-center' for="STEP_2_4">
+                                <input class="quiz-input" type="radio" name="STEP_1" id="STEP_2_4">
+                                <svg class="quiz-label_arrow quiz-label_arrow__red"><use xlink:href="./assets/img/sprite.svg#quiz-arrow-red"></use></svg>
+                                <div class="quiz-label_step">Загадочное</div>
+                            </label>
+                        </form>
+                    </div>
+                    <div class="quiz-item" data-step="3">
+                        <div class="quiz-title">Чем будете угощать гостей?</div>
+                        <form>
+                            <label class='quiz-label flex flex-align-center' for="STEP_3_1">
+                                <input class="quiz-input" type="radio" name="STEP_1" id="STEP_3_1">
+                                <svg class="quiz-label_arrow quiz-label_arrow__red"><use xlink:href="./assets/img/sprite.svg#quiz-arrow-red"></use></svg>
+                                <div class="quiz-label_step">Сладкий стол</div>
+                            </label>
+                            <label class='quiz-label flex flex-align-center' for="STEP_3_2">
+                                <input class="quiz-input" type="radio" name="STEP_1" id="STEP_3_2">
+                                <svg class="quiz-label_arrow quiz-label_arrow__red"><use xlink:href="./assets/img/sprite.svg#quiz-arrow-red"></use></svg>
+                                <div class="quiz-label_step">Паназиатский ужин</div>
+                            </label>
+                            <label class='quiz-label flex flex-align-center' for="STEP_3_3">
+                                <input class="quiz-input" type="radio" name="STEP_1" id="STEP_3_3">
+                                <svg class="quiz-label_arrow quiz-label_arrow__red"><use xlink:href="./assets/img/sprite.svg#quiz-arrow-red"></use></svg>
+                                <div class="quiz-label_step">Домашняя кухня</div>
+                            </label>
+                            <label class='quiz-label flex flex-align-center' for="STEP_3_4">
+                                <input class="quiz-input" type="radio" name="STEP_1" id="STEP_3_4">
+                                <svg class="quiz-label_arrow quiz-label_arrow__red"><use xlink:href="./assets/img/sprite.svg#quiz-arrow-red"></use></svg>
+                                <div class="quiz-label_step">Европейское меню</div>
+                            </label>
+                        </form>
+                    </div>
+                    <div class="quiz-item" data-step="4">
+                        <div class="quiz-title">Как будете развлекаться?</div>
+                        <form>
+                            <label class='quiz-label flex flex-align-center' for="STEP_4_1">
+                                <input class="quiz-input" type="radio" name="STEP_1" id="STEP_4_1">
+                                <svg class="quiz-label_arrow quiz-label_arrow__red"><use xlink:href="./assets/img/sprite.svg#quiz-arrow-red"></use></svg>
+                                <div class="quiz-label_step">Выездное гастрошоу</div>
+                            </label>
+                            <label class='quiz-label flex flex-align-center' for="STEP_4_2">
+                                <input class="quiz-input" type="radio" name="STEP_1" id="STEP_4_2">
+                                <svg class="quiz-label_arrow quiz-label_arrow__red"><use xlink:href="./assets/img/sprite.svg#quiz-arrow-red"></use></svg>
+                                <div class="quiz-label_step">Foodtainment </div>
+                            </label>
+                            <label class='quiz-label flex flex-align-center' for="STEP_4_3">
+                                <input class="quiz-input" type="radio" name="STEP_1" id="STEP_4_3">
+                                <svg class="quiz-label_arrow quiz-label_arrow__red"><use xlink:href="./assets/img/sprite.svg#quiz-arrow-red"></use></svg>
+                                <div class="quiz-label_step">Кулинарный мастер-класс онлайн</div>
+                            </label>
+                            <label class='quiz-label flex flex-align-center' for="STEP_4_4">
+                                <input class="quiz-input" type="radio" name="STEP_1" id="STEP_4_4">
+                                <svg class="quiz-label_arrow quiz-label_arrow__red"><use xlink:href="./assets/img/sprite.svg#quiz-arrow-red"></use></svg>
+                                <div class="quiz-label_step">Эновпечатление</div>
+                            </label>
+                        </form>
+                    </div>
+                </div>
+                <div class="quiz-img flex-center">
+                    <img src="./assets/img/any/people.png" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+</body>
+</html>
+
+<!-- <svg><use xlink:href="./assets/img/sprite.svg#logo"></use></svg> -->

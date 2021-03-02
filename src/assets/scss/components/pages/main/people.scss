@@ -1,0 +1,31 @@
+.people{
+  height: calc(100vh - 180px);
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+
+  @media screen and (max-width:$xl) {
+    height: calc(100vh - 160px);
+  }
+
+  img{
+    max-width:545px;
+    width:100%;
+  }
+  &-text{
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 52px;
+    text-align: center;
+    color: #2E2E2E;
+    margin:0 0 20px 0;
+
+    @media screen and (max-width:$md) {
+      max-width: 375px;
+      width:100%;
+      margin:0 auto 20px auto;
+      font-size: 26px;
+      line-height: 32px;
+    }
+  }
+}

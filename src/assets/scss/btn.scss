@@ -1,0 +1,31 @@
+.btn{
+  height:45px;
+  border-radius: 40px;
+  font-size: 16px;
+  color:#fff;
+  transition:$transition;
+  cursor: pointer;
+
+  &-md{
+    max-width:215px;
+    width:100%;
+  }
+
+  &__second{
+    background: $secondColor;
+    &:hover,
+    &:focus,
+    &:active{
+      background: $primaryColor;
+    }
+  }
+
+  &__primary{
+    background: $primaryColor;
+    &:hover,
+    &:focus,
+    &:active{
+      background: $secondColor;
+    }
+  }
+}
